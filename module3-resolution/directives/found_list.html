@@ -3,5 +3,5 @@
     <ul>
         <li ng-repeat="item in list">{{item.short_name}} {{item.name}} {{item.description}} <button ng-click="method({item: $index})">Don't want this one</button></li>
     </ul>
-    <h4 ng-if="!list.length">"Nothing found"</h4>
+    <h4 ng-if="!list.length && list !== undefined">"Nothing found"</h4>
 </div>

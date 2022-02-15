@@ -22,6 +22,7 @@
     function NarrowItDownController(NarrowItDownService) {
         var narrow = this;
         narrow.value = "";
+        narrow.found;
 
         narrow.searchValue = function () {
             narrow.found = NarrowItDownService.searchList(narrow.value);
